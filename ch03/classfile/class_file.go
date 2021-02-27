@@ -87,7 +87,7 @@ func (cf *ClassFile) readAndCheckVersion(reader *ClassReader) {
 }
 
 func (cf *ClassFile) MinorVersion() uint16 {
-	return cf.majorVersion
+	return cf.minorVersion
 }
 
 func (cf *ClassFile) MajorVersion() uint16 {
@@ -98,7 +98,7 @@ func (cf *ClassFile) ConstantPool() ConstantPool {
 	return cf.constantPool
 }
 
-func (cf *ClassFile) AcessFlags() uint16 {
+func (cf *ClassFile) AccessFlags() uint16 {
 	return cf.accessFlags
 }
 
